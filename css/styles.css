@@ -798,6 +798,9 @@ img {
 .review-form-wrapper {
   margin-bottom: 8px;
 }
+.review-form-wrapper.comment-wrapper {
+  margin-bottom: 16px;
+}
 .text-label {
   display: block;
   margin-bottom: 4px;
