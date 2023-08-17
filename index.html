@@ -381,7 +381,8 @@
                         <input class="subscribe-form-input" name="subscribe-form-input" id="subscribe-form-input"
                             type="email" placeholder="E-mail" required minlength="3" maxlength="30" />
                     </label>
-                    <button class="subscribe-button" type="submit">Subscribe
+                    <button class="subscribe-button" type="submit">
+                        Subscribe
                         <svg class="subscribe-icon" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
                         </svg>
@@ -392,7 +393,6 @@
     </footer>
     <!-- modal window on page index -->
     <div class="backdrop is-hidden" data-modal>
-
         <div class="modal">
             <button type="button" class="modal-btn" data-modal-close>
                 <svg class="icon" width="8" height="8">
@@ -403,14 +403,16 @@
             <form name="review_form" autocomplete="on">
                 <div class="review-form-wrapper">
                     <label class="text-label" for="user-name">Name</label>
+
                     <div class="modal-field">
                         <input class="modal-input" type="text" name="user-name" id="user-name"
                             placeholder="Marc Jacobs" />
-                        <svg class="modal-input-icon" width="18" height="18">
+                        <svg class="modal-input-icon" width="18" height="24">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </div>
-
+                </div>
+                <div class="review-form-wrapper">
                     <label class="text-label" for="email">Email</label>
                     <div class="modal-field">
                         <input class="modal-input" type="email" name="email" id="email" required minlength="3"
@@ -419,7 +421,8 @@
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </div>
-
+                </div>
+                <div class="review-form-wrapper">
                     <label class="text-label" for="tel">Phone</label>
                     <div class="modal-field">
                         <input class="modal-input" type="tel" name="tel" id="tel" required minlength="3" maxlength="12"
@@ -428,29 +431,29 @@
                             <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
                     </div>
-
+                </div>
+                <div class="review-form-wrapper">
                     <label class="text-label" for="comment">Comment</label>
                     <div class="modal-field">
                         <textarea class="modal-review-input" name="comment" id="comment" rows="5"
                             placeholder="Text input" minlength="3" maxlength="1000"></textarea>
                     </div>
-
-                    <label class="modal-label-agreement" for="agreement">
-                        <input class="checkbox" type="checkbox" name="agreement" id="agreement" />
-                        <span class="custom-checkbox">
-                            <svg class="custom-checkbox-icon" width="10" height="8">
-                                <use href="./images/icons.svg#checked"></use>
-                            </svg>
-                        </span>
-                        <span class="modal-agreement-description">
-                            I accept the terms and conditions of the
-                            <a class="modal-agreement-description-accent" href="#" target="_blank"
-                                rel="noopener noreferrer">
-                                Privacy Policy</a>
-                        </span>
-                    </label>
-                    <button class="submit_button" type="submit">Send</button>
                 </div>
+                <label class="modal-label-agreement" for="agreement">
+                    <input class="checkbox" type="checkbox" name="agreement" id="agreement" />
+                    <span class="custom-checkbox">
+                        <svg class="custom-checkbox-icon" width="10" height="8">
+                            <use href="./images/icons.svg#checked"></use>
+                        </svg>
+                    </span>
+                    <span class="modal-agreement-description">
+                        I accept the terms and conditions of the
+                        <a class="modal-agreement-description-accent" href="#" target="_blank"
+                            rel="noopener noreferrer">
+                            Privacy Policy</a>
+                    </span>
+                </label>
+                <button class="submit_button" type="submit">Send</button>
             </form>
         </div>
     </div>
